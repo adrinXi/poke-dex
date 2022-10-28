@@ -1,0 +1,342 @@
+ul {
+  list-style: none;
+}
+/*...cartas de poke...*/
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 7px #0003;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease;
+}
+.card__header {
+  position: relative;
+  height: 120px;
+}
+/*...color de cada card...*/
+.fire {
+  background: linear-gradient(yellow, red);
+}
+.bug {
+  background: linear-gradient(green, yellow);
+}
+.dragon {
+  background: linear-gradient(#efb810, yellow);
+}
+.electric {
+  background: linear-gradient(yellow, rgb(253, 253, 126));
+}
+.fairy {
+  background: linear-gradient(#f73d93, #eeeeee);
+}
+.flying {
+  background: linear-gradient(#7f8487, #bbbbbb);
+}
+.ghost {
+  background: linear-gradient(#572364, #eeeeee);
+}
+.ice {
+  background: linear-gradient(#1597bb, #8fd6e1);
+}
+.normal {
+  background: linear-gradient(#bbbbbb, #c4b6b6);
+}
+.grass {
+  background: linear-gradient(#346751, #84c69b);
+}
+.psychic {
+  background: linear-gradient(#3d2c8d, #bbbbbb);
+}
+.stone {
+  background: linear-gradient(#b85c38, #e0c097);
+}
+.steel {
+  background: linear-gradient(#e3e4e5, #dddddd);
+}
+.water {
+  background: linear-gradient(#3282b8, #bbe1fa);
+}
+.rock {
+  background: linear-gradient(#e2703a, yellow);
+}
+.poison {
+  background: linear-gradient(#3d2c8d, #bbbbbb);
+}
+.ground {
+  background: linear-gradient(#f0804d, rgb(223, 223, 85));
+}
+.fighting {
+  background: linear-gradient(#fa7d09, #bbbbbb);
+}
+.dark {
+  background: linear-gradient(rgb(208, 208, 88), rgb(253, 253, 126));
+}
+/*...photo/titulo...*/
+.card__pokemoon {
+  margin: 5px;
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+  margin-left: 20%;
+}
+.card__pikachu {
+  position: absolute;
+  top: 79px;
+  left: 67%;
+  width: 15%;
+}
+/*...btn search...*/
+.btn__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border: none;
+  gap: 2px;
+}
+.input__card {
+  text-indent: 0.6em;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.search__card {
+  border-radius: 7px;
+  padding: 2.6px;
+  width: 60px;
+  background-color: cadetblue;
+  color: azure;
+  border: none;
+  font-size: 15px;
+}
+.search__card:hover {
+  background-color: #0f4c75;
+  color: azure;
+  transition: 0.4s;
+  cursor: pointer;
+}
+/*...contenido de las card...*/
+.card__avatar {
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+}
+.card__body {
+  margin-top: 70px;
+}
+.card__name {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 5px;
+  color: azure;
+}
+.card__list-type {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.card__item-type {
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: azure;
+}
+.card__item-type:nth-child(2) {
+  position: relative;
+}
+.card__item-type:nth-child(2)::before {
+  content: "/";
+  position: absolute;
+  left: -11px;
+  font-weight: 500;
+}
+.card__hr {
+  border: none;
+  border-top: 0.5px solid #e5e5e5;
+}
+.card__footer {
+  margin: 14px 0 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card__list-stats {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #0f4c75;
+}
+.card__list-stats:hover {
+  color: #000;
+}
+.card__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.card__stat-title {
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: center;
+}
+/*...Welcome + nombre del navagador...*/
+.card__welcome {
+  text-align: center;
+  background-color: #84c69b;
+  color: azure;
+  height: 33px;
+  font-size: 20px;
+}
+.card__welcome:hover {
+  background-color: #0f4c75;
+  color: azure;
+  transition: 0.4s;
+  cursor: pointer;
+}
+/*...btn All pokemons...*/
+.general__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+.card__type {
+  background-color: #efb810;
+  color: azure;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  padding: 2px;
+}
+.card__type:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/*...contenido de pokemonDetails*/
+.card_pokein {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 13px;
+  min-height: 100vh;
+  background-image: linear-gradient(315deg, #6f4f72 0%, #193243 74%);
+  overflow: hidden;
+}
+.general__details {
+  padding: 13px;
+  width: 200px;
+  height: 500px;
+  border: 0.2rem solid #fff;
+  color: azure;
+  border-radius: 1rem;
+  margin: 20px;
+}
+hr {
+  margin: 5px;
+}
+.photo__details {
+  position: relative;
+  left: -50px;
+  width: 300px;
+}
+.name__stat {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+  color: azure;
+}
+
+.name__info {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 6px;
+  color: azure;
+}
+.card__id {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 23px;
+  margin-bottom: 7px;
+  color: azure;
+}
+/*...abilities...*/
+.details__abilit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  color: azure;
+}
+.details__abilit-text {
+  background-color: #84c69b;
+  text-align: center;
+  margin: 8px;
+  padding: 5px 5px;
+  height: 70px;
+  width: 90px;
+  border-radius: 10px;
+}
+/*...moves...*/
+.details__move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  color: azure;
+}
+.details__move-text {
+  background-color: #84c69b;
+  border-radius: 50px;
+  margin: 7px;
+  padding: 5px 5px;
+}
+/*...ancho y alto...*/
+.details__he-we {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  color: azure;
+  background-color: #84c69b;
+}
+.details__he-we-text {
+  text-align: center;
+  margin: 8px;
+  padding: 5px 3px;
+  height: 90px;
+  width: 70px;
+  border-radius: 10px;
+}

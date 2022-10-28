@@ -1,0 +1,64 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+  height: 100vh;
+}
+.card__general {
+  width: 100%;
+  height: 100%;
+}
+/*...titulo + text...*/
+.card__container {
+  text-align: center;
+  padding-top: 30%;
+   
+}
+
+h1 {
+  
+  color: azure;
+  font-size: 55px;
+  text-shadow: 0 20px 25px #dce2ef, 0 40px 60px #2e2e31;
+}
+.card__text {
+  color: azure;
+  font-size: 23px;
+margin: 5px;
+}
+/*photo principal*/
+.card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+/*menu de navegation y bnt principal*/
+.card__navigate {
+  width: 30%;
+  border-radius: 50px;
+  border: none;
+  text-indent: 0.6em;
+  margin: 10px;
+  padding: 5px;
+  font-size: 13px;
+}
+.card__btn {
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  padding: 7px 7px;
+  background-color: cadetblue;
+  color: azure;
+  font-size: 13px;
+}
+.card__btn:hover {
+  background-color: azure;
+  color: cadetblue;
+  transition: 0.4s;
+}
